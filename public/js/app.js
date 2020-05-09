@@ -6,7 +6,7 @@ if(submitBtn){
     submitBtn.addEventListener("click",(event) =>{
       search = document.getElementById("search").value;
         event.preventDefault();
-        fetch('http://localhost:3000/weather?address='+search)
+        fetch('/weather?address='+search)
         .then(
           function(response) {
             span1 = document.getElementById("message1");
